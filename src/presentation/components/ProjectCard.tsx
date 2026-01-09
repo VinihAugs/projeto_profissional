@@ -17,7 +17,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
       whileHover={{ y: -10 }}
     >
       <Card className="group relative h-full overflow-visible border-cyan-500/20 bg-gradient-to-br from-slate-900/90 to-slate-800/90 backdrop-blur-sm transition-all duration-300 hover:border-cyan-500/50 hover:shadow-[0_0_30px_rgba(34,211,238,0.3)]">
-        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/0 via-cyan-500/0 to-cyan-500/0 transition-all duration-300 group-hover:from-cyan-500/10 group-hover:via-cyan-500/5 group-hover:to-cyan-500/10" />
+        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/0 via-cyan-500/0 to-cyan-500/0 transition-all duration-300 group-hover:from-cyan-500/10 group-hover:via-cyan-500/5 group-hover:to-cyan-500/10 pointer-events-none" />
         
         <CardHeader className="p-4 sm:p-6">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 sm:gap-0">
@@ -49,12 +49,12 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
           </div>
         </CardContent>
 
-        <CardFooter className="p-4 sm:p-6 pt-0">
+        <CardFooter className="p-4 sm:p-6 pt-0 relative z-10">
           <a
             href={project.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="group/btn w-full inline-flex items-center justify-center rounded-md text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 focus-visible:ring-offset-2 border border-cyan-500/30 bg-slate-800/50 text-cyan-400 hover:border-cyan-500 hover:bg-cyan-500/10 hover:shadow-[0_0_20px_rgba(34,211,238,0.4)] h-11 px-8 cursor-pointer"
+            className="group/btn w-full inline-flex items-center justify-center rounded-md text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 focus-visible:ring-offset-2 border border-cyan-500/30 bg-slate-800/50 text-cyan-400 hover:border-cyan-500 hover:bg-cyan-500/10 hover:shadow-[0_0_20px_rgba(34,211,238,0.4)] h-11 px-8 cursor-pointer relative z-20 no-underline"
           >
             <ExternalLink className="mr-2 h-4 w-4 transition-transform group-hover/btn:rotate-12" />
             Visitar Projeto
