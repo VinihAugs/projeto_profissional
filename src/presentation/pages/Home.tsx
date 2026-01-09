@@ -48,7 +48,7 @@ export function Home() {
                 className="flex items-center gap-2 sm:gap-3"
               >
                 <Sparkles className="h-5 w-5 sm:h-6 sm:w-6 text-cyan-400 animate-pulse" />
-                <span className="text-sm sm:text-base text-cyan-400 font-semibold">Desenvolvedor Full Stack</span>
+                <span className="text-sm sm:text-base text-cyan-400 font-semibold">Desenvolvedor Front-End</span>
               </motion.div>
               
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">

@@ -4,6 +4,16 @@ import { Award, Briefcase, GraduationCap, Code, CheckCircle2, Languages, Brain }
 export function About() {
   const experiences = [
     {
+      title: 'Desenvolvedor Full Stack',
+      description: 'Desenvolvimento de aplicações web completas utilizando React, Next.js, Node.js, TypeScript, MongoDB e PostgreSQL. Implementação de APIs RESTful e GraphQL, arquitetura de microsserviços, integração com serviços cloud e desenvolvimento de soluções escaláveis com foco em performance e experiência do usuário',
+      icon: Briefcase,
+    },
+    {
+      title: 'Desenvolvedor Front-End',
+      description: 'Especializado em desenvolvimento de interfaces modernas e responsivas utilizando React, Next.js, TypeScript, Redux, Context API, Tailwind CSS, Material UI e Styled Components. Experiência em componentização avançada, design systems, testes unitários, otimização de performance e metodologias ágeis (Scrum/Kanban)',
+      icon: Code,
+    },
+    {
       title: 'Analista de Sistemas',
       description: 'Desenvolvimento em Visual Basic for Applications (VBA), Automação Web com Selenium, Suporte e Banco de Dados (SQL)',
       icon: Briefcase,
@@ -147,15 +157,37 @@ export function About() {
             </h2>
             <div className="space-y-3">
               <p className="text-base sm:text-lg text-slate-300">
-                Estou cursando o último ano do curso de tecnólogo em{' '}
+                Formado em tecnólogo de{' '}
                 <strong className="text-cyan-400">Análise e Desenvolvimento de Sistemas</strong> na{' '}
-                <strong className="text-cyan-400">FATEC São Paulo</strong> (2021-2025), onde aprendo as melhores práticas 
-                e metodologias de desenvolvimento de software.
+                <strong className="text-cyan-400">FATEC São Paulo</strong> (2020-2025), onde adquiri conhecimentos sólidos 
+                nas melhores práticas e metodologias de desenvolvimento de software, preparando-me para atuar como desenvolvedor 
+                front-end com foco em soluções inovadoras e de alta qualidade.
               </p>
               <div className="pt-3 border-t border-slate-700/50">
-                <p className="text-sm sm:text-base text-slate-400 mb-2 font-semibold">Áreas de estudo:</p>
+                <p className="text-sm sm:text-base text-slate-400 mb-2 font-semibold">Habilidades adquiridas no curso:</p>
                 <div className="flex flex-wrap gap-2">
-                  {['Análise de sistemas', 'Análise de projetos', 'Implementação e manutenção de sistemas', 'Programação orientada a objetos', 'Banco de dados'].map((area) => (
+                  {[
+                    'Algoritmos e Lógica de Programação',
+                    'Programação Orientada a Objetos',
+                    'Estruturas de Dados',
+                    'Banco de Dados (SQL e NoSQL)',
+                    'Engenharia de Software',
+                    'Sistemas Operacionais',
+                    'Redes de Computadores',
+                    'Arquitetura e Organização de Computadores',
+                    'Interação Humano Computador',
+                    'Segurança da Informação',
+                    'Sistemas Distribuídos',
+                    'Gestão de Projetos',
+                    'Metodologias Ágeis (Scrum)',
+                    'Desenvolvimento Web',
+                    'Programação Linear e Aplicações',
+                    'Estatística Aplicada',
+                    'Matemática Discreta',
+                    'Auditoria de Sistemas',
+                    'Inteligência Artificial',
+                    'Gestão e Governança de TI',
+                  ].map((area) => (
                     <span
                       key={area}
                       className="rounded-md bg-slate-700/30 px-3 py-1 text-xs sm:text-sm text-slate-300"

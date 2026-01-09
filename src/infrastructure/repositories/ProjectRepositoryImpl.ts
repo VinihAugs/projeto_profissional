@@ -35,6 +35,14 @@ export class ProjectRepositoryImpl implements ProjectRepository {
       technologies: ['React', 'TypeScript', 'Vite'],
       category: 'web',
     },
+    {
+      id: '5',
+      title: 'The Hogwarts Archive',
+      description: 'Plataforma dedicada ao universo de Harry Potter, oferecendo uma coleção abrangente de informações sobre personagens, feitiços e muito mais',
+      url: 'https://hppage.vercel.app',
+      technologies: ['React', 'TypeScript', 'Next.js'],
+      category: 'web',
+    },
   ];
 
   async getAll(): Promise<Project[]> {
