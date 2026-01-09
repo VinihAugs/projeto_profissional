@@ -51,14 +51,20 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
         </CardContent>
 
         <CardFooter className="p-4 sm:p-6 pt-0">
-          <Button
-            variant="outline"
-            className="group/btn w-full border-cyan-500/30 bg-slate-800/50 text-cyan-400 transition-all hover:border-cyan-500 hover:bg-cyan-500/10 hover:shadow-[0_0_20px_rgba(34,211,238,0.4)] text-sm sm:text-base"
-            onClick={() => window.open(project.url, '_blank')}
+          <a
+            href={project.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group/btn w-full"
           >
-            <ExternalLink className="mr-2 h-4 w-4 transition-transform group-hover/btn:rotate-12" />
-            Visitar Projeto
-          </Button>
+            <Button
+              variant="outline"
+              className="group/btn w-full border-cyan-500/30 bg-slate-800/50 text-cyan-400 transition-all hover:border-cyan-500 hover:bg-cyan-500/10 hover:shadow-[0_0_20px_rgba(34,211,238,0.4)] text-sm sm:text-base"
+            >
+              <ExternalLink className="mr-2 h-4 w-4 transition-transform group-hover/btn:rotate-12" />
+              Visitar Projeto
+            </Button>
+          </a>
         </CardFooter>
       </Card>
     </motion.div>

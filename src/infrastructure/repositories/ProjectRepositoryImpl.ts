@@ -7,7 +7,7 @@ export class ProjectRepositoryImpl implements ProjectRepository {
       id: '1',
       title: 'CineVision AI',
       description: 'Plataforma de análise e recomendação de filmes usando inteligência artificial',
-      url: 'https://cinevision-ai.vercel.app',
+      url: 'https://cinevision-ia.vercel.app',
       technologies: ['React', 'AI', 'TypeScript'],
       category: 'ai',
     },
