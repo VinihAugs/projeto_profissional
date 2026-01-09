@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import { ExternalLink, Sparkles } from 'lucide-react';
 import { Project } from '@/domain/entities/Project';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from './ui/Card';
-import { Button } from './ui/Button';
 
 interface ProjectCardProps {
   project: Project;
@@ -55,15 +54,10 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
             href={project.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="group/btn w-full"
+            className="group/btn w-full inline-flex items-center justify-center rounded-md text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 focus-visible:ring-offset-2 border border-cyan-500/30 bg-slate-800/50 text-cyan-400 hover:border-cyan-500 hover:bg-cyan-500/10 hover:shadow-[0_0_20px_rgba(34,211,238,0.4)] h-11 px-8"
           >
-            <Button
-              variant="outline"
-              className="group/btn w-full border-cyan-500/30 bg-slate-800/50 text-cyan-400 transition-all hover:border-cyan-500 hover:bg-cyan-500/10 hover:shadow-[0_0_20px_rgba(34,211,238,0.4)] text-sm sm:text-base"
-            >
-              <ExternalLink className="mr-2 h-4 w-4 transition-transform group-hover/btn:rotate-12" />
-              Visitar Projeto
-            </Button>
+            <ExternalLink className="mr-2 h-4 w-4 transition-transform group-hover/btn:rotate-12" />
+            Visitar Projeto
           </a>
         </CardFooter>
       </Card>
